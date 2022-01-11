@@ -1,0 +1,138 @@
+@media (max-width: 900px){
+
+    .match {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .body {
+        justify-content: center;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #dir {
+        display: none;
+    }
+}
+
+@media (min-height: 760px) {
+
+    .match .card {
+        height: 25vh;
+    }
+    
+    .match .card img {
+        width:110px; 
+        height:110px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    #left {
+        display: none;
+    }
+
+    #responsivo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #responsivo span {
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+    }
+
+    #responsivo h2 {
+        margin: 5px;
+        margin-left: 24px;
+    }
+
+    #responsivo a {
+        
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        font-family: 'Righteous', cursive;
+        font-weight: lighter;
+        font-size: 18px;
+        padding: 10px;
+        margin: 5px;
+        margin-right: 24px;
+        border-radius: 10px;
+
+    }
+
+    .match {
+        margin: 0px 10vw 0px 10vw;
+    }
+
+    .match .card {
+        width: 27vw;
+        height: 17vh;
+   
+   }
+   
+
+}
+
+@media (max-width: 550px) {
+
+    header nav a {
+
+        display: none;
+
+    }
+
+    .match {
+        padding: 10px;
+
+    }
+
+    .match .card {
+         width: 27vw;
+         height: 16vh;
+         margin: 2vw;
+    
+    }
+
+    .match .card img {
+        width:80px; 
+        height:80px;
+    }
+
+    #vitoria #container {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        font-size: 3.2vw;
+    }
+
+    #vitoria a {
+        left: calc(50% - 14.2vw);
+    }
+
+}
+
+@media (max-width: 280px) {
+    .match .card img {
+        width:70px; 
+        height:70px;
+    }
+
+}

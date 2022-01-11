@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Match</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/3132/3132772.svg" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/win.css" /><!--win screen style-->
+    <link rel="stylesheet" href="styles/responsive.css" />
+    </head>
+    <body>
+    <header>
+        <h1>Memory match</h1>
+        <nav>
+        </nav>
+    </header>
+    <!--CHANGE* This div will be displayed when the player wins the match!-->
+    <div id="vitoria">
+        <div id="container">
+        <h1>Congratuations!</h1>
+        <p>You found all pairs</p>
+        <h2><span id="movimentosvitoria">0</span> Tried</h2>
+        <a href="index.html">play again</a>
+        </div>
+    </div>
+    <!--END-CHANGE*-->
+    <section id="responsivo">
+        <h2>Erros <span id="movimentos2">0</span></h2>
+        <a href="index.html">Restart</a>
+    </section>
+
+    <div class="body">
+        <section id="left">
+        <h2>Erros <span id="movimentos">0</span></h2>
+        <a href="index.html">Restart</a>
+    </section>
+    <section class="match">
+        <div class="card" data-nome = "frog">
+            <img class="front" src="src/frog.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "frog">
+            <img class="front" src="src/frog.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card" />
+        </div>
+        <div class="card" data-nome = "cow">
+            <img class="front" src="src/cow.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "cow">
+            <img class="front" src="src/cow.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "dog">
+            <img class="front" src="src/dog.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card" />
+        </div>
+        <div class="card" data-nome = "dog">
+            <img class="front" src="src/dog.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "lion">
+            <img class="front" src="src/lion.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "lion" >
+            <img class="front" src="src/lion.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "bird">
+            <img class="front" src="src/bird.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "bird">
+            <img class="front" src="src/bird.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "elephant">
+            <img class="front" src="src/elephant.png" alt="card" />
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+        <div class="card" data-nome = "elephant">
+            <img class="front" src="src/elephant.png" alt="card"/>
+            <img class="back" src="src/team6.png" alt="card"/>
+        </div>
+    </section>
+    <section id="dir"></section>
+    </div>
+    <footer>
+    <ul>
+        <li><h3>Produced by Team 6</h3></li>
+        <li>
+    </ul>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <audio controls class="sheep" id="playercow" src="src/cow.mp3" preload hidden></audio>
+    <audio controls class="sheep" id="playerbird" src="src/bird.mp3" preload hidden></audio>
+    <audio controls class="sheep" id="playerfrog" src="src/frog.mp3" preload hidden></audio>
+    <audio controls class="sheep" id="playerdog" src="src/dog.mp3" preload hidden></audio>
+    <audio controls class="sheep" id="playerelephant" src="src/elephant.mp3" preload hidden></audio>
+    <audio controls class="sheep" id="playerlion" src="src/lion.mp3" preload hidden></audio>
+</body>
+</html>
